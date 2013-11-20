@@ -1,0 +1,42 @@
+{
+  "name": "http-verify",
+  "description": "Send an HTTP request and verify part(s) of the response.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/skrenek/http-verify",
+  "author": {
+    "name": "Steve Krenek",
+    "email": "steve.krenek@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/skrenek/http-verify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/skrenek/http-verify/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/skrenek/http-verify/blob/master/LICENSE"
+    }
+  ],
+  "main": "main.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {},
+  "devDependencies": {
+    "request": "~2.27.0",
+    "mocha": "~1.14.0",
+    "should": "~2.1.0"
+  },
+  "keywords": [
+    "http",
+    "verify",
+    "validate"
+  ],
+  "dependencies": {
+    "request": "~2.27.0",
+    "underscore": "~1.5.2"
+  }
+}
