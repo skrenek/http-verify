@@ -1,7 +1,7 @@
 {
   "name": "http-verify",
   "description": "Send an HTTP request and verify part(s) of the response.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "homepage": "https://github.com/skrenek/http-verify",
   "author": {
     "name": "Steve Krenek",

@@ -5,11 +5,15 @@ module.exports = {
 
   verify: function(options, cb) {
 
-    var url        = options.url,
-        conditions = options.conditions,
+    var httpOptions = options.httpOptions || { strictSSL: true };
+
+    if (! httpOptions.url) httpOptions.url = options.url;
+    if (options.hasOwnProperty('strictSSL')) httpOptions.strictSSL = options.strictSSL;
+
+    var conditions = options.conditions,
         task       = this;
 
-    if (! url) {
+    if (! httpOptions.url) {
       throw new Error ('`url` is required.');
     }
     if (! conditions ) {
@@ -20,7 +24,7 @@ module.exports = {
       conditions = [ conditions ];
     }
 
-    request(url, function(err, res, body) {
+    request(httpOptions, function(err, res, body) {
       var conditionsMet = true,
           result = "";
 

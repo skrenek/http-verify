@@ -18,6 +18,23 @@ describe('http-verify test suite', function() {
     });
   });
 
+  it('should succeed on a 200 status code using httpOptions as well', function(done) {
+    httpVerify.verify({
+      httpOptions: { 
+        url: 'https://www.google.com', 
+        strictSSL: false 
+      },
+      conditions: [
+        { 
+          type: 'statusCode'
+        }
+      ]
+    }, function(err) {
+      should.not.exist(err);
+      done();
+    });
+  });
+
   it('should succeed on a 404 when expected', function(done) {
     httpVerify.verify({
       url: 'https://www.google.com/notfound',
