@@ -1,4 +1,6 @@
-# http-verify
+# http-verify  
+![strider badge](http://ci.huterra.com/skrenek/http-verify/badge)
+----
 
 Verify one or more parts of an http response.
 
