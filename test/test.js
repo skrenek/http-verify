@@ -119,9 +119,4 @@ describe('http-verify test suite', function() {
     });
   });
 
-  it('should fail for testing strider', function(done) {
-    should.equal(true, false);
-    done();
-  });
-
 });
