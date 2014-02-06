@@ -24,7 +24,9 @@
   "engines": {
     "node": ">= 0.8.0"
   },
-  "scripts": {},
+  "scripts": {
+    "test": "mocha"
+  },
   "devDependencies": {
     "request": "~2.27.0",
     "mocha": "~1.14.0",
